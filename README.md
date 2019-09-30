@@ -1,7 +1,7 @@
 "# JS-understanding-the-weird-parts" 
 An advanced JavaScript course! Scope, closures, prototypes, 'this', build your own framework, and more.
 
-avascript is the language that modern developers need to know, and know well. Truly knowing Javascript will get you a job, and enable you to build quality web and server applications.
+Javascript is the language that modern developers need to know, and know well. Truly knowing Javascript will get you a job, and enable you to build quality web and server applications.
 
 NOTE: This course includes information on ECMAScript 6 (ES6) the next version of Javascript!
 
