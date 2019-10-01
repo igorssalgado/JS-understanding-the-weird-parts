@@ -1,37 +1,27 @@
 function mapForEach(arr, fn) {
+
     var newArr = [];
     for (var i = 0; i < arr.length; i++) {
         newArr.push(
-            fn(arr[i])
-        )
+            fn(arr[i] + (arr[i+1] || arr[0]))
+        );
     };
 
     return newArr;
 }
 
-
 var arr1 = [1, 2, 3];
-console.log(arr1);
+// console.log(arr1);
 
+// var arr2 = mapForEach(arr1, function(item){
+//     var n = item
+//     if(item > 2){ this.item = item };
 
-var arr2 = mapForEach(arr1, function (item) {
-    return item * 2;
+//     return this.item || 'ixi ' + n
+// })
+// console.log(arr2);
+
+var arr3 = mapForEach(arr1, function(item){
+    console.log(item)
 })
-console.log(arr2)
-
-
-var arr3 = mapForEach(arr1, function (item) {
-    return item > 2;
-})
-console.log(arr3)
-
-var checkPastLimit = function (limiter, item) {
-    return item > limiter;
-}
-var arr4 = mapForEach(arr1, noBind(1));
-console.log(arr4);
-
-
-function noBind(limiter){
-    return checkPastLimit.bind(this, limiter);
-}
+console.log(arr3);
